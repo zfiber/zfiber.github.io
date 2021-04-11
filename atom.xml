@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://zfiber.github.io/</id>
+    <title>Fiber&apos;s Blog</title>
+    <updated>2021-04-11T08:41:55.235Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://zfiber.github.io/"/>
+    <link rel="self" href="https://zfiber.github.io/atom.xml"/>
+    <subtitle>山河无恙，岁月悠长，斯人若彩虹······</subtitle>
+    <logo>https://zfiber.github.io/images/avatar.png</logo>
+    <icon>https://zfiber.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2021, Fiber&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[借助辅助列来实现vlookup查找多个重复项]]></title>
+        <id>https://zfiber.github.io/post/借助辅助列来实现vlookup查找多个重复项/</id>
+        <link href="https://zfiber.github.io/post/借助辅助列来实现vlookup查找多个重复项/">
+        </link>
+        <updated>2021-04-11T06:56:03.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="借助辅助列来实现vlookup查找多个重复项">借助辅助列来实现vlookup查找多个重复项</h1>
+<p>在Excel中，vlookup作为非常有用的查找函数，相信大家经常在使用。但是，vlookup有一个缺陷，如下图：</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/zfiber/picture/raw/master/img/Snipaste_2021-04-11_13-24-21.png" alt="" loading="lazy"></figure>
+<p>在查找中，vlookup在找到第一个符合条件的项后会自动停止查找，即只能查找符合条件的第一个项。</p>
+<p>在上述案例中，我们可以得知叫“张三”的人有3个。如果数据比较多，可以运用COUNTIF函数（案例中可以使用：<code>=COUNTIF(B:B,&quot;张三&quot;)</code>）来计算出共有多少个“张三”。</p>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/zfiber/picture/raw/master/img/Snipaste_2021-04-11_14-36-36.png" alt="" loading="lazy"></figure>
+<p>如果用vlookup函数，只能找出第一个出现的“张三”的职业，即“工人”。要找第二个，则必须要现找出第一个“张三”出现的行数，然后把查找范围的初始行数限定在该行下面一行才可。找第三个，又要重复一遍，非常繁琐。因此，我们需要一个辅助列，将“张三”们编一个序号，使他们每个人拥有唯一的序号。</p>
+<p>在B列前插入一列空白列，并输入公式<code>=C2&amp;COUNTIF($C$2:C2,&quot;张三&quot;)</code>。请注意绝对引用和相对引用！在公式应用范围的初始值处用绝对引用是因为每次都要从C2开始计数，算出“张三”是第几次出现。这样，每次出现一个“张三”，计数就会+1，别的姓名+几不予理睬。辅助列计算完毕后，只需将“张三”按序号排列即可。</p>
+<figure data-type="image" tabindex="3"><img src="https://gitee.com/zfiber/picture/raw/master/img/Snipaste_2021-04-11_14-49-22.png" alt="" loading="lazy"></figure>
+<p>最后，使用vlookup函数，列出所有“张三”的职业。</p>
+<figure data-type="image" tabindex="4"><img src="https://gitee.com/zfiber/picture/raw/master/img/Snipaste_2021-04-11_14-56-11.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2020年，充满希望的一年]]></title>
+        <id>https://zfiber.github.io/post/2020年，充满希望的一年/</id>
+        <link href="https://zfiber.github.io/post/2020年，充满希望的一年/">
+        </link>
+        <updated>2020-05-23T12:20:00.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="2020年真是一个特别的一年有很多坏消息但是也有很多好消息-曾经以为即将失去的却好像是命中注定一般的就在那里也无风雨也无晴">2020年真是一个特别的一年，有很多坏消息，但是也有很多好消息。曾经以为即将失去的，却好像是命中注定一般的就在那里，也无风雨也无晴。</h3>
+<h3 id="前面几个月甚至是几年一直在焦虑中度过-看不到未来的生活会是什么样的也忘记了前进的勇气-但是最近虽然生活还是这样但是至少内心比较平静暂时有了一种安稳的感觉-有了安稳的内心才可以继续踏上下一阶段的征程">前面几个月甚至是几年，一直在焦虑中度过。看不到未来的生活会是什么样的，也忘记了前进的勇气。但是最近，虽然生活还是这样，但是至少内心比较平静，暂时有了一种安稳的感觉。有了安稳的内心，才可以继续踏上下一阶段的征程！！！</h3>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[清风终究会吹散灰尘]]></title>
+        <id>https://zfiber.github.io/post/清风终究会吹散灰尘/</id>
+        <link href="https://zfiber.github.io/post/清风终究会吹散灰尘/">
+        </link>
+        <updated>2020-03-13T14:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>有没有很累的时候？</p>
+<p>有！</p>
+<p>有没有耿耿于怀的事？</p>
+<p>有！</p>
+<p>那过去了，还会再那么的执着于这些事情吗？</p>
+<p>绝大多数的事情，随着人的离开，会将这些一并的渐渐遗忘，直至无所谓想起或者不再想起。然后，那些仍旧能偶尔想起来的事情，将会伴随着你的一生。</p>
+<p>太阳每一天都会升起，不管那天是晴天还是阴天。对于大多数人来说来说，如果要过好这一生，就要用尽全力，所以晴天还是阴天，都值得去奋斗。在晴天储存好正能量，在阴天的时候，好好的期盼晴天，唯有如此，才能不负韶华。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一条无法逆转的时间线]]></title>
+        <id>https://zfiber.github.io/post/一条无法逆转的时间线/</id>
+        <link href="https://zfiber.github.io/post/一条无法逆转的时间线/">
+        </link>
+        <updated>2020-03-06T05:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>对于时间，我们大部分时候都是在感叹流逝的飞快，一转眼可能几年已经过去了。<br>
+今年的疫情来的那么的突然，让我们能在家里面足足呆够至少两三周的时间，也有了更多思考的时间。闲来无事，想想时间这东西真是非常的无情。它向一条奔流到海，一去不复返的大河，又像一株盛开之后，无法止住凋零的花朵。它永远在向时间线的一断不停前进，无论发生了什么。<br>
+儿子今年读大班，2020年的9月份就要读一年级了。本来在五六月份就要举行毕业典礼，告别自己的童年。但是这次疫情的原因，保守的估计，这学期开不了学了。他有一天还哭着说想去幼儿园。是的，小伙伴们还没有来得及告别就要毕业了。而任何人都无能为力，只能顺着这个形势走下去。<br>
+儿童是这样，成年人更是如此。有时想着等过段时间再做某件事情，但是随着生活的进行，很多都生不由己，错过了就是错过了。你只能在现在或者将来的某个时间，想起来，有点后悔。<br>
+所以，珍惜当下，尝试自己想过的生活，好好的生活。在十字路口，如果是时间帮你做了选择，那么也请好好努力！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[用Gridea在Coding上快速建立一个网站]]></title>
+        <id>https://zfiber.github.io/post/用Gridea在Coding上快速建立一个网站/</id>
+        <link href="https://zfiber.github.io/post/用Gridea在Coding上快速建立一个网站/">
+        </link>
+        <updated>2020-03-01T05:11:03.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="gridea的优势">Gridea的优势</h1>
+<p>Gridea是我用过的最方便省力的个人网站建站工具，比wordpress、hexo都更加的方便，并且结合坚果云可以非常有效的实现网站资源的备份以及多平台同步，真的非常的方便。</p>
+<h1 id="为什么要用coding进行网站托管">为什么要用Coding进行网站托管？</h1>
+<p>首先因为Github服务器在国外，现在访问速度原来越慢，并且下载速度只有几KB/S，对于国内用户的访问非常不友好，如果网站托管在Github行，访问速度会比较可怜🤣，所以就选择了Coding。Coding作为国内代码托管服务商，访问速度绝对是没问题的，并且也是免费的，所以比较适合。<br>
+现在，让我们开始吧！</p>
+<h1 id="coding的注册及项目创建">Coding的注册及项目创建</h1>
+<p><a href="https://coding.net/">Coding官网地址</a></p>
+<ul>
+<li>
+<p>首先注册Coding会员以及实名制（此步骤省略😺)</p>
+</li>
+<li>
+<p>项目创建。<img src="https://zfiber.github.io//post-images/1583045352684.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>选择项目模板：DevOps。<img src="https://zfiber.github.io//post-images/1583045414177.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>填写项目基本信息。项目名称可随意填写，项目标识会自动生成。项目描述空白即可。然后点击完成创建。</p>
+</li>
+<li>
+<p>代码仓库初始化。选择左边菜单栏&quot;代码仓库&quot;，然后会跳出代码仓库初始化界面，点击&quot;快速初始化仓库&quot;，勾选“启用Readme文件初始化仓库”，最后点击快速初始化仓库即可。<img src="https://zfiber.github.io//post-images/1583045440136.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>静态网站。在左边构建与部署菜单栏中选择静态网站，然后在邮编点击“立即发布静态网站”<img src="https://zfiber.github.io//post-images/1583045451753.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>创建网站。网站名称随意填写blog，然后保存。<img src="https://zfiber.github.io//post-images/1583045461413.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>获取网页地址。该地址就是以后你的网站访问地址了，别人可以通过这个地址来浏览你的网页，如果你有自己的域名，也可以把自己的域名绑定这个地址，更加方便。<img src="https://zfiber.github.io//post-images/1583045470921.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>创建令牌。按以下图片进行创建令牌。<img src="https://zfiber.github.io//post-images/1583045480767.png" alt="" loading="lazy"></p>
+</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://zfiber.github.io//post-images/1583045501070.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://zfiber.github.io//post-images/1583045519501.png" alt="" loading="lazy"></figure>
+<ul>
+<li>最后就是配置Gridea客户端啦。大功告成！<img src="https://zfiber.github.io//post-images/1583326855676.png" alt="" loading="lazy"></li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[新冠病毒，全世界都不能坐视不理]]></title>
+        <id>https://zfiber.github.io/post/新冠病毒，全世界都不能坐视不理/</id>
+        <link href="https://zfiber.github.io/post/新冠病毒，全世界都不能坐视不理/">
+        </link>
+        <updated>2020-02-25T12:39:00.000Z</updated>
+        <content type="html"><![CDATA[<p>2020年的春节被突如其来的疫情弄得手忙脚乱，措手不及。从全世界范围内的抢购口罩到类战时接管，让14亿人窝在家里两个多星期，应该算是有时以来规模最大的一次人口管制了。用了接近三周的时间，调用了全国的储备供给湖北省，充分展示了人多力量大的举国体制优势。值此疫情之际，其他国家纷纷阻断与中国的关卡，希望能躲过这场灾难。</p>
+<p>但是天不遂人愿，从前面几天的日本钻石公主号邮轮到韩国疫情爆发，再到最近的意大利，感觉这个疫情势头在中国以外要重新开始爆发。这种废了这么大劲才控制住了，其他国家怎么办?一些地广人稀的国家也就算了，但是一些人口密度大，医疗资源不发达的国家，这将是一个严峻的挑战。</p>
+<p>我出生在21世界的80年代，在和平年代，感觉世界的格局基本不会变了。就算中东地区常年的边境摩擦，武装叛乱，但是也没有特别的变动。但是这次疫情的感觉是，人真的很脆弱，一个小小的病毒的可怕程度丝毫不比核武器差。摧毁一个小国家真的是轻而易举。经过美国的经济全球化之后，虽然一些国家经过产业分工，获得了高利润的产业，但是如果一个国家没有完整的工业制造基础，在这种疫情面前真的是举步维艰。中国虽然全力制造口罩，但在短时间内仍然供不应求。试想，如果全球爆发疫情，那些没有口罩制造量的国家，将从哪里去进口呢？所以说多难兴邦也是有点道理的。这次的疫情就像打疫苗一样，虽然有点反应，但是为了今后的更好发展，应当及时吸取经验，在平时做足准备，将来这种病毒疫情，肯定会再次到来的。因为病毒伴随着人类的发展，想躲也躲不掉。</p>
+<p><strong>加油中国，加油世界！</strong></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[《哪吒》有感]]></title>
+        <id>https://zfiber.github.io/post/《哪吒》有感/</id>
+        <link href="https://zfiber.github.io/post/《哪吒》有感/">
+        </link>
+        <updated>2019-08-02T10:59:39.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="今天带老婆孩子去看了最近很火的哪吒网上评分很高但我个人认为没这么高-哪吒是魔灵敖丙是灵珠-其实两人都亦正亦邪-哪吒从小受到乡民的鄙视认为是妖怪-他从小就没做啥好事一直欺负别人-但是所谓坏人能放下屠刀能-立地成佛-而敖丙背负着龙族的千年复兴大业因仁慈而断送的希望-是的敖丙没有做坏事但是谁可怜那些在海底炼狱中煎熬的族人因为是龙族所以只能背负这种命运-视角是人类所以龙族不配有感受-电影主旨是我命由我不由天自己的命运由自己掌握-非常唯心的非常鸡汤励志的一个主题-我们知道很多的人生道理为何仍过不好这一生-因为我们没有哪吒这样的天赋和奇遇并且不知道知行合一-你知道这是对的但你没去做其实就是说明你不是真正的懂-以此文提醒自己也提醒有缘人">今天带老婆孩子去看了最近很火的《哪吒》，网上评分很高，但我个人认为没这么高。哪吒是魔灵，敖丙是灵珠。其实两人都亦正亦邪。哪吒从小受到乡民的鄙视，认为是妖怪。他从小就没做啥好事，一直欺负别人。但是所谓坏人能放下屠刀，能 立地成佛。而敖丙背负着龙族的千年复兴大业，因仁慈而断送的希望。是的，敖丙没有做坏事，但是谁可怜那些在海底炼狱中煎熬的族人，因为是龙族，所以只能背负这种命运。视角是人类，所以龙族不配有感受。电影主旨是我命由我不由天，自己的命运由自己掌握。非常唯心的，非常鸡汤励志的一个主题。我们知道很多的人生道理，为何仍过不好这一生。因为我们没有哪吒这样的天赋和奇遇，并且不知道知行合一。你知道这是对的，但你没去做，其实就是说明你不是真正的懂。以此文提醒自己，也提醒有缘人。</h3>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[30岁了]]></title>
+        <id>https://zfiber.github.io/post/30岁/</id>
+        <link href="https://zfiber.github.io/post/30岁/">
+        </link>
+        <updated>2018-03-13T04:16:00.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="不知不觉已经到了30岁了-人生可能已经过了一小半也可能已经过了一大半-古人称三十而立但是我还没有做到-现在春天已经来临万物都开始复苏该开始的也应该要开始了-春种一粒粟秋收万颗子-希望半年后能看到自己的成果">不知不觉，已经到了30岁了。人生可能已经过了一小半，也可能已经过了一大半。古人称三十而立，但是我还没有做到。现在，春天已经来临，万物都开始复苏，该开始的也应该要开始了。春种一粒粟，秋收万颗子。希望半年后，能看到自己的成果。</h4>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[《解忧杂货店》]]></title>
+        <id>https://zfiber.github.io/post/解忧杂货店/</id>
+        <link href="https://zfiber.github.io/post/解忧杂货店/">
+        </link>
+        <updated>2018-01-19T13:19:00.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="人生真的会经历很多很多的选择有的时候心底里已经最好了选择但是却连自己都不相信这个选择是否正确这才出现了解忧杂货店-一个作为局外人帮你分析帮你肯定自己想法的地方">人生真的会经历很多很多的选择，有的时候心底里已经最好了选择，但是却连自己都不相信这个选择是否正确，这才出现了解忧杂货店。一个作为局外人帮你分析，帮你肯定自己想法的地方。</h4>
+<h4 id="但是最最关键的还是选择之后的努力">但是，最最关键的还是选择之后的努力！</h4>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[You are the one I won't reset.]]></title>
+        <id>https://zfiber.github.io/post/you are the one/</id>
+        <link href="https://zfiber.github.io/post/you are the one/">
+        </link>
+        <updated>2017-12-06T12:25:00.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="you-are-the-one-i-wont-reset">You are the one I won't reset.</h4>
+]]></content>
+    </entry>
+</feed>
