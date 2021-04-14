@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zfiber.github.io/</id>
     <title>Fiber&apos;s Blog</title>
-    <updated>2021-04-11T12:43:00.128Z</updated>
+    <updated>2021-04-14T05:34:51.129Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zfiber.github.io/"/>
     <link rel="self" href="https://zfiber.github.io/atom.xml"/>
@@ -10,6 +10,31 @@
     <logo>https://zfiber.github.io/images/avatar.png</logo>
     <icon>https://zfiber.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Fiber&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[用数据透视表来“多条件”统计数据]]></title>
+        <id>https://zfiber.github.io/post/用数据透视表来“多条件”统计数据/</id>
+        <link href="https://zfiber.github.io/post/用数据透视表来“多条件”统计数据/">
+        </link>
+        <updated>2021-04-14T04:52:45.000Z</updated>
+        <content type="html"><![CDATA[<p>我们知道，Excel里面有筛选功能，可以设置主要条件、次要条件来进行多条件的筛选。但是如果只筛选，那么统计工作还是要自己手动统计，也不是特别方便。<br>
+所以现在我们要借助“数据透视表”来实现这个功能。实例如下：<br>
+<img src="https://gitee.com/zfiber/picture/raw/master/img/Snipaste_2021-04-14_13-08-55.png" alt="" loading="lazy"></p>
+<p>我们要统计去过每个城市几次。</p>
+<p>首先，我们需要插入“数据透视表”。</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/zfiber/picture/raw/master/img/Snipaste_2021-04-14_13-09-43.png" alt="" loading="lazy"></figure>
+<p>我习惯在数据里调用，其实在插入里也可以调用。</p>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/zfiber/picture/raw/master/img/Snipaste_2021-04-14_13-10-14.png" alt="" loading="lazy"></figure>
+<p>然后输入数据所在的范围，可以全选<strong>列</strong>，这样以后增加了行，也可以继续使用。放置透视表的位置也可以根据需要放置。</p>
+<figure data-type="image" tabindex="3"><img src="https://gitee.com/zfiber/picture/raw/master/img/Snipaste_2021-04-14_13-11-12.png" alt="" loading="lazy"></figure>
+<p>把“字段列表”中的项拖动到“列”、“行”、“值”中去。拖动到“行”，则城市按行排列，把“景点”拖动到值中，然后系统会自动统计。</p>
+<p>除了统计计数外，还可以变更为求和。</p>
+<figure data-type="image" tabindex="4"><img src="https://gitee.com/zfiber/picture/raw/master/img/Snipaste_2021-04-14_13-11-42.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://gitee.com/zfiber/picture/raw/master/img/Snipaste_2021-04-14_13-12-04.png" alt="" loading="lazy"></figure>
+<p>如果要统计多个数据，则按需求继续拖动到“行、列、值”。</p>
+<figure data-type="image" tabindex="6"><img src="https://gitee.com/zfiber/picture/raw/master/img/Snipaste_2021-04-14_13-13-49.png" alt="" loading="lazy"></figure>
+<p>以此类推，可以实现丰富的功能！</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[借助辅助列来实现vlookup查找多个重复项]]></title>
         <id>https://zfiber.github.io/post/借助辅助列来实现vlookup查找多个重复项/</id>
@@ -153,15 +178,6 @@
         <updated>2018-01-19T13:19:00.000Z</updated>
         <content type="html"><![CDATA[<h4 id="人生真的会经历很多很多的选择有的时候心底里已经最好了选择但是却连自己都不相信这个选择是否正确这才出现了解忧杂货店-一个作为局外人帮你分析帮你肯定自己想法的地方">人生真的会经历很多很多的选择，有的时候心底里已经最好了选择，但是却连自己都不相信这个选择是否正确，这才出现了解忧杂货店。一个作为局外人帮你分析，帮你肯定自己想法的地方。</h4>
 <h4 id="但是最最关键的还是选择之后的努力">但是，最最关键的还是选择之后的努力！</h4>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[You are the one I won't reset.]]></title>
-        <id>https://zfiber.github.io/post/you are the one/</id>
-        <link href="https://zfiber.github.io/post/you are the one/">
-        </link>
-        <updated>2017-12-06T12:25:00.000Z</updated>
-        <content type="html"><![CDATA[<h4 id="you-are-the-one-i-wont-reset">You are the one I won't reset.</h4>
 ]]></content>
     </entry>
 </feed>
